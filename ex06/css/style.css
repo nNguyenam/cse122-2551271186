@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 28px 16px;
+  background-color: #FAF3E0;
+  color: #1f2933;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.trang-mon-ngon {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.tieu-de-chinh {
+  margin: 0 0 24px;
+  color: #E65100;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.bo-cuc {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.cot-anh {
+  display: flex;
+  justify-content: center;
+}
+
+.anh-minh-hoa {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.cot-bang {
+  min-width: 0;
+}
+
+.bang-mon-an {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.bang-mon-an thead th {
+  background-color: #E65100;
+  color: #FFFFFF;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  padding: 9px 12px;
+}
+
+.bang-mon-an tbody tr {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E0D6C2;
+}
+
+.bang-mon-an tbody tr:nth-child(even) {
+  background-color: #FDF8EF;
+}
+
+.bang-mon-an tbody td {
+  padding: 10px 12px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.cot-stt {
+  width: 60px;
+  text-align: center;
+}
+
+.cot-ten-mon {
+  text-align: left;
+}
+
+@media (max-width: 640px) {
+  .bo-cuc {
+    grid-template-columns: 1fr;
+  }
+}
